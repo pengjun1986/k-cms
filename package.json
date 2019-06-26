@@ -1,0 +1,21 @@
+{
+  "name": "k-cms",
+  "version": "1.0.0",
+  "description": "koa api service of cms",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pengjun1986/k-cms.git"
+  },
+  "author": "alex",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0"
+  }
+}
