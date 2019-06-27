@@ -2,10 +2,12 @@
   "name": "k-cms",
   "version": "1.0.0",
   "description": "koa api service of cms",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "dev": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "./node_modules/.bin/nodemon index.js",
+    "alp": "pm2",
+    "uat": "pm2",
+    "prd": "pm2"
   },
   "repository": {
     "type": "git",
@@ -17,5 +19,8 @@
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
