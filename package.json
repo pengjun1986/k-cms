@@ -4,7 +4,7 @@
   "description": "koa api service of cms",
   "private": true,
   "scripts": {
-    "dev": "./node_modules/.bin/nodemon index.js",
+    "dev": "./node_modules/.bin/nodemon src/app.js",
     "alp": "pm2",
     "uat": "pm2",
     "prd": "pm2"
@@ -18,9 +18,12 @@
   "dependencies": {
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "mongoose": "^5.6.3"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.0.1",
     "nodemon": "^1.19.1"
   }
 }
