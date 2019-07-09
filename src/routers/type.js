@@ -1,7 +1,14 @@
 module.exports = {
   list (ctx) {
+    // console.log('mongoose =', mongoose)
     ctx.body = {
-      username: ctx.request.body.username
+      username: 'aaaa'
+    }
+  },
+  insert (ctx) {
+    // console.log('mongoose =', mongoose)
+    ctx.body = {
+      username: 'bbb'
     }
   }
 }

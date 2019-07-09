@@ -1,8 +1,9 @@
 const Router = require('koa-router')
 const router = new Router()
 
-const glob = require('glob')
-const jsArray = glob.sync('./routers/*.js')
-console.log(jsArray)
+const type = require('./routers/type')
+
+router.get('/type', type.list)
+router.post('/type', type.insert)
 
 module.exports = router
