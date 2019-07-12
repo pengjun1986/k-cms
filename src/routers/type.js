@@ -1,14 +1,21 @@
+const Type = require('../db/type').Type
+
 module.exports = {
-  list (ctx) {
-    // console.log('mongoose =', mongoose)
+  async list (ctx) {
+    const type = new Type()
+    console.log(Type.find)
+    const data = await Type.find({ name: '张三' })
     ctx.body = {
-      username: 'aaaa'
+      code: 200,
+      data
     }
   },
-  insert (ctx) {
-    // console.log('mongoose =', mongoose)
+  async insert (ctx) {
+    const type = new Type({ name: '张三' })
+    const rsp = await type.save()
     ctx.body = {
-      username: 'bbb'
+      code: 200,
+      data: rsp
     }
   }
 }
