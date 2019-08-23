@@ -2,9 +2,7 @@ const Type = require('../db/type').Type
 
 module.exports = {
   async list (ctx) {
-    const type = new Type()
-    console.log(Type.find)
-    const data = await Type.find({ name: '张三' })
+    const data = await Type.find()
     ctx.body = {
       code: 200,
       data
